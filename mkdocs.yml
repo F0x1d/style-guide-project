@@ -1,0 +1,67 @@
+site_name: Руководство по стилю документации «Таскбук»
+site_description: Правила написания и оформления пользовательской и API-документации сервиса «Таскбук»
+site_url: https://f0x1d.github.io/style-guide-project/
+repo_url: https://github.com/F0x1d/style-guide-project
+repo_name: F0x1d/style-guide-project
+edit_uri: edit/main/docs/
+docs_dir: docs
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.keys
+
+nav:
+  - Главная: index.md
+  - Стиль изложения:
+      - Тон и обращение к читателю: style/tone.md
+      - Построение предложений: style/sentences.md
+      - Терминология и иноязычные слова: style/terms.md
+  - Орфография и пунктуация: style/spelling.md
+  - Оформление текста:
+      - Структура документа и заголовки: formatting/structure.md
+      - Списки и таблицы: formatting/lists-tables.md
+      - Элементы интерфейса и выделения: formatting/ui.md
+      - Код, команды и API: formatting/code.md
+      - Изображения и ссылки: formatting/media-links.md
+  - Правила работы с Markdown: formatting/markdown.md
+  - Шаблоны:
+      - Инструкция: doc-templates/how-to.md
+      - Описание метода API: doc-templates/api-method.md
+      - Описание изменений: doc-templates/release-notes.md
+  - Словарь и глоссарий: glossary.md
+  - Примеры документов:
+      - Как создать проект: examples/create-project.md
+      - Метод GET /tasks: examples/api-get-tasks.md
