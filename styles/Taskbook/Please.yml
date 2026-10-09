@@ -1,0 +1,7 @@
+# Раздел «Тон и обращение к читателю» → «Обращение к читателю»
+extends: existence
+message: "Не используйте «%s» в инструкциях."
+level: warning
+ignorecase: true
+tokens:
+  - пожалуйста

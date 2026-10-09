@@ -1,0 +1,9 @@
+# Раздел «Изображения и ссылки» → «Ссылки»
+extends: existence
+message: "Текст ссылки должен описывать, куда она ведёт, а не «%s»."
+level: error
+ignorecase: true
+scope: raw
+nonword: true
+tokens:
+  - '\[(?:тут|здесь|по ссылке|ссылка)\]'

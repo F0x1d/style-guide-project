@@ -1,0 +1,7 @@
+# Раздел «Орфография и пунктуация» → «Тире и дефис»
+extends: existence
+message: "Между словами ставится длинное тире «—», а не дефис."
+level: error
+nonword: true
+tokens:
+  - '\S - \S'

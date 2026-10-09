@@ -1,0 +1,7 @@
+# Раздел «Орфография и пунктуация» → «Восклицательный знак»
+extends: existence
+message: "Не используйте восклицательный знак."
+level: warning
+nonword: true
+tokens:
+  - '\p{L}!'
