@@ -49,6 +49,7 @@ nav:
       - Тон и обращение к читателю: style/tone.md
       - Построение предложений: style/sentences.md
       - Терминология и иноязычные слова: style/terms.md
+      - Доступность текста: style/accessibility.md
   - Орфография и пунктуация: style/spelling.md
   - Оформление текста:
       - Структура документа и заголовки: formatting/structure.md
